@@ -1,0 +1,8 @@
+name: lovecc
+version: 1
+handle:
+- compress:  if ( out_header["Content-Length"] >= 64 ) compress
+cron:
+- description: Sign
+  url: cron.php
+  schedule: */1 * * * *
